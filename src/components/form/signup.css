@@ -94,10 +94,12 @@
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
+    transition: ease-in .2s;
 }
 
 .form__label input:hover {
     background: #E5E5E5;
+    transition: ease-in-out .3s;
 }
 
 .form input:focus {
@@ -285,4 +287,5 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     font-size: 0.875rem;
     padding: 0 4px;
     color: #F47073;
+    font-family: var(--second-font);
 }
