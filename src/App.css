@@ -158,11 +158,13 @@ ul {
   font-weight: 500;
   font-size: 18px;
   letter-spacing: 0.015em;
-  text-align: center
+  text-align: center;
+  transition: ease-in-out .1s;
 }
 
 .button:hover {
   background: #A60C0E;
+  transition: ease-out .2s;
 }
 
 .button:active {

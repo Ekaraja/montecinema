@@ -93,10 +93,12 @@
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
+    transition: ease-out .2s;
 }
 
 .form__label input:hover {
     background: #E5E5E5;
+    transition: ease-in-out .2s;
 }
 
 .form input:focus {

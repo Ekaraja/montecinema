@@ -68,6 +68,8 @@ const Form = () => {
 		}
 	};
 
+	console.log("coucou");
+
 	return (
 		<section className="register">
 			{page > maxPage ? (
