@@ -50,7 +50,7 @@ export const validateStep2 = (values) => {
         errors.dateOfBirth = "Date of birth is required"
     } else if (!ageValidate(values.dateOfBirth)) {
         errors.dob = true
-    }
+    } 
 
     if (!values.isCheck) {
         errors.isCheck = true
@@ -69,6 +69,10 @@ export const checkPassLength = (password) => {
         checkPassword.passwordLength = true
         return true
     }
+    else {
+        checkPassword.passwordLength = false
+        return false
+    }
 }
 
 
@@ -77,12 +81,20 @@ export const checkPassAlphabet = (password) => {
         checkPassword.passwordAlphabet = true
         return true;
     }
+    else {
+        checkPassword.passwordAlphabet = false
+        return false
+    }
 }
 
 export const checkPassDigit = (password) => {
     if (password.match(/\d/)) {
         checkPassword.passwordDigit = true
         return true
+    }
+    else {
+        checkPassword.passwordDigit = false
+        return false
     }
 }
 
